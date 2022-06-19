@@ -46,4 +46,23 @@ export const GlobalStyle = createGlobalStyle`
   .bg-dark {
     background-color: #000 !important;
   }
+
+  .navbar-brand {
+    cursor: pointer;
+  }
+
+  .navbar-nav a {
+    color: rgba(255, 255, 255, .75);
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    margin: 5px 12px;
+
+    &:hover {
+      color: rgba(255, 255, 255, .55);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 `
