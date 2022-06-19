@@ -1,6 +1,6 @@
 import Layout from '../components/Layout/Layout'
 
-const Character = () => {
+const Characters = () => {
   return (
     <Layout title='Star Wars Page | Characters'>
       <h1>Characters</h1>
@@ -8,4 +8,4 @@ const Character = () => {
   )
 }
 
-export default Character
+export default Characters

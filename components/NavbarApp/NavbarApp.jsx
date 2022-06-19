@@ -18,12 +18,12 @@ const NavbarApp = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Link href="/character">Characters</Link>
-            <Link href="/planet">Planets</Link>
-            <Link href="/film">Films</Link>
-            <Link href="/specie">Species</Link>
-            <Link href="/vehicle">Vehicles</Link>
-            <Link href="/starship">Starships</Link>
+            <Link href="/characters">Characters</Link>
+            <Link href="/planets">Planets</Link>
+            <Link href="/films">Films</Link>
+            <Link href="/species">Species</Link>
+            <Link href="/vehicles">Vehicles</Link>
+            <Link href="/starships">Starships</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
