@@ -11,7 +11,7 @@ const NavbarApp = () => {
     <SC.Wrapper collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand href="/">
-          <Image src="/images/logo.png" alt='logo' width={150} height={65} layout='intrinsic' />
+          <Image src="/images/logo.png" alt="logo" width={150} height={65} layout="intrinsic" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
