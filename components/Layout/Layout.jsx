@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../Navbar/Navbar'
 
 const Layout = ({ children, title }) => {
   return (
@@ -6,6 +7,8 @@ const Layout = ({ children, title }) => {
       <Head>
         <title>{ title }</title>
       </Head>
+
+      <Navbar />
 
       <main>{ children }</main>
     </>
