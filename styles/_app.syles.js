@@ -65,4 +65,24 @@ export const GlobalStyle = createGlobalStyle`
       margin-right: 0;
     }
   }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 20px 0;
+
+    p {
+      color: rgba(255, 255, 255, .65);
+      text-align: center;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+
+    a {
+      color: rgba(235, 182, 1, 1);
+      text-decoration: none;
+    }
+  }
 `
