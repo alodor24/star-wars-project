@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import NavbarApp from '../NavbarApp/NavbarApp'
+import FooterApp from '../FooterApp'
+import NavbarApp from '../NavbarApp'
 
 const Layout = ({ children, title }) => {
   return (
@@ -9,6 +10,7 @@ const Layout = ({ children, title }) => {
       </Head>
       <NavbarApp />
       <main>{ children }</main>
+      <FooterApp />
     </>
   )
 }
