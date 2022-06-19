@@ -3,12 +3,11 @@ import {
   Container,
   Navbar, 
   Nav } from 'react-bootstrap'
-import * as SC from './NavbarApp.styles'
 
 
 const NavbarApp = () => {
   return (
-    <SC.Wrapper collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand href="/">
           <Image src="/images/logo.png" alt="logo" width={150} height={65} layout="intrinsic" />
@@ -25,7 +24,7 @@ const NavbarApp = () => {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </SC.Wrapper>
+    </Navbar>
   )
 }
 

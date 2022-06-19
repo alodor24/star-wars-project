@@ -8,4 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
     background-position: center;
   }
+
+  .bg-dark {
+    background-color: #000 !important;
+  }
 `
