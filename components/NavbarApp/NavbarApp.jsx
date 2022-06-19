@@ -4,6 +4,7 @@ import {
   Container,
   Navbar, 
   Nav } from 'react-bootstrap'
+import { Navigation } from './constants'
 
 
 const NavbarApp = () => {
@@ -18,12 +19,9 @@ const NavbarApp = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Link href="/characters">Characters</Link>
-            <Link href="/planets">Planets</Link>
-            <Link href="/films">Films</Link>
-            <Link href="/species">Species</Link>
-            <Link href="/vehicles">Vehicles</Link>
-            <Link href="/starships">Starships</Link>
+            {Navigation.map(item => (
+              <Link key={item.id} href={item.path}>{item.text}</Link>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>
