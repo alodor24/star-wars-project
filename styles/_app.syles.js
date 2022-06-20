@@ -44,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
       animation-name: ${Animation};
       animation-duration: 7s;
       animation-timing-function: ease-out;
-      animation-delay: 5s;
+      animation-delay: 3s;
     }
   }
 
@@ -71,6 +71,11 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  h1 {
+    color: rgba(255, 255, 255, .65);
+    margin-bottom: 35px;
+  }
+
   footer {
     position: fixed;
     bottom: 0;
@@ -89,5 +94,46 @@ export const GlobalStyle = createGlobalStyle`
       color: rgba(235, 182, 1, 1);
       text-decoration: none;
     }
+  }
+
+  .nav-link {
+    color: rgba(235, 182, 1, 1);
+
+    :hover {
+      color: rgba(235, 182, 1, .75);
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, .55);
+  }
+
+  .nav-tabs .nav-link.active {
+    color: #42a5f5;
+    background-color: black;
+    border-color: rgba(255, 255, 255, .55) rgba(255, 255, 255, .55) transparent;
+    border-radius: 0;
+  }
+
+  .nav-tabs .nav-link:focus, 
+  .nav-tabs .nav-link:hover {
+    border-color: rgba(255, 255, 255, .55) rgba(255, 255, 255, .55) transparent;
+    border-radius: 0;
+  }
+
+  .list-group-item {
+    color: rgba(255, 255, 255, .35);
+    background-color: rgba(0, 0, 0, .55);
+  }
+
+  .list-group-item-action:focus, 
+  .list-group-item-action:hover {
+    background-color: rgba(255, 255, 255, .55);
+  }
+
+  .list-group-item.active {
+    color: #42a5f5;
+    background-color: rgba(0, 0, 0, .8);
+    border-color: rgba(0, 0, 0, .8);
   }
 `
