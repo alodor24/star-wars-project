@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ListGroup, Col } from 'react-bootstrap'
 import Characters from '../Characters'
 import Planets from '../Planets'
+import Films from '../Films'
 import * as SC from './DataSheet.styles'
 
 const DataSheet = ({ data, typeView }) => {
@@ -27,7 +28,7 @@ const DataSheet = ({ data, typeView }) => {
         <SC.WrapperInfo>
           {typeView === 'charaters' && <Characters data={dataSelected} />}
           {typeView === 'planets' && <Planets data={dataSelected} />}
-          {typeView === 'films' && <div>Films</div>}
+          {typeView === 'films' && <Films data={dataSelected} />}
           {typeView === 'species' && <div>Species</div>}
           {typeView === 'vehicles' && <div>Vehicles</div>}
           {typeView === 'starships' && <div>Starships</div>}
