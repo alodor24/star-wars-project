@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { createGlobalStyle, keyframes } from 'styled-components'
 
 const Animation = keyframes`

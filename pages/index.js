@@ -1,9 +1,9 @@
-import Layout from '../components/Layout/Layout'
+import Layout from '../components/Layout'
 
 const Home = () => {
   return (
     <Layout title='Star Wars Page | Home'>
-      <h1>Hello World</h1>
+      
     </Layout>
   )
 }

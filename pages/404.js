@@ -1,16 +1,10 @@
-import { Col, Container, Row } from 'react-bootstrap'
-import Layout from '../components/Layout/Layout'
+import Layout from '../components/Layout'
+import ViewError from '../components/ViewError'
 
 const Custom404 = () => {
   return (
     <Layout title='Star Wars Page | 404'>
-      <Container>
-        <Row className="align-items-center justify-content-center">
-          <Col>
-            <h3>404 - Page Not Found</h3>
-          </Col>
-        </Row>
-      </Container>
+      <ViewError />
     </Layout>
   )
 }

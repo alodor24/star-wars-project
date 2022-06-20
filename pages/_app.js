@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { GlobalStyle } from '../styles/_app.syles'
 
 const MyApp = ({ Component, pageProps }) => {
