@@ -14,7 +14,7 @@ const DataSheet = ({ data, typeView }) => {
     <>
       <Col sm={5} className="mb-3">
         <ListGroup defaultActiveKey="#1">
-          {(data.results || []).map((item, index) => (
+          {data.results.map((item, index) => (
             <ListGroup.Item key={index} action href={`#${index + 1}`} onClick={() => handleClick(index)}>
               {item.name}
             </ListGroup.Item>
