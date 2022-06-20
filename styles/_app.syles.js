@@ -28,20 +28,24 @@ export const GlobalStyle = createGlobalStyle`
     background-position: center;
   }
 
-  main::after {
-    content: '';
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    right: -150px;
-    bottom: -20%;
-    opacity: 0;
-    background-image: url('/images/milenian-falcon.png');
-    background-size: contain;
-    animation-name: ${Animation};
-    animation-duration: 7s;
-    animation-timing-function: ease-out;
-    animation-delay: 5s;
+  main {
+    margin-top: 100px;
+
+    ::after {
+      content: '';
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      right: -150px;
+      bottom: -20%;
+      opacity: 0;
+      background-image: url('/images/milenian-falcon.png');
+      background-size: contain;
+      animation-name: ${Animation};
+      animation-duration: 7s;
+      animation-timing-function: ease-out;
+      animation-delay: 5s;
+    }
   }
 
   .bg-dark {
