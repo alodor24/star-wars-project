@@ -3,6 +3,7 @@ import { ListGroup, Col } from 'react-bootstrap'
 import Characters from '../Characters'
 import Planets from '../Planets'
 import Films from '../Films'
+import Species from '../Species'
 import * as SC from './DataSheet.styles'
 
 const DataSheet = ({ data, typeView }) => {
@@ -29,7 +30,7 @@ const DataSheet = ({ data, typeView }) => {
           {typeView === 'charaters' && <Characters data={dataSelected} />}
           {typeView === 'planets' && <Planets data={dataSelected} />}
           {typeView === 'films' && <Films data={dataSelected} />}
-          {typeView === 'species' && <div>Species</div>}
+          {typeView === 'species' && <Species data={dataSelected} />}
           {typeView === 'vehicles' && <div>Vehicles</div>}
           {typeView === 'starships' && <div>Starships</div>}
         </SC.WrapperInfo>
