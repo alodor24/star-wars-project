@@ -4,6 +4,7 @@ import Characters from '../Characters'
 import Planets from '../Planets'
 import Films from '../Films'
 import Species from '../Species'
+import Vehicles from '../Vehicles'
 import * as SC from './DataSheet.styles'
 
 const DataSheet = ({ data, typeView }) => {
@@ -31,7 +32,7 @@ const DataSheet = ({ data, typeView }) => {
           {typeView === 'planets' && <Planets data={dataSelected} />}
           {typeView === 'films' && <Films data={dataSelected} />}
           {typeView === 'species' && <Species data={dataSelected} />}
-          {typeView === 'vehicles' && <div>Vehicles</div>}
+          {typeView === 'vehicles' && <Vehicles data={dataSelected} />}
           {typeView === 'starships' && <div>Starships</div>}
         </SC.WrapperInfo>
       </Col>
